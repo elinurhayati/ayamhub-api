@@ -1,0 +1,188 @@
+GET http://localhost:7000/umkm
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZFVta20iOjEsIm5hbWVfdW1rbSI6IlJNIFBhZGFuZyIsInVzZXJuYW1lX3Vta20iOiJwZGcxMjMiLCJlbWFpbF91bWttIjoicGRnMTIzQGdtYWlsLmNvbSIsInRscF91bWttIjoiMDgxOTk5ODg4NjU0IiwiaWF0IjoxNjg0ODYwMTg4LCJleHAiOjE2ODQ4NjAyMDN9.F6rGbyzOXUBVIKfvp7B2oNA6Pmx6m_vNBME1DOaGiXQ
+
+
+###
+POST http://localhost:7000/regist-umkm
+Content-Type: application/json
+
+{
+    "name_umkm": "RM Sinjay",
+    "username_umkm": "sjy123",
+    "pass_umkm": "12345",
+    "email_umkm": "sjy123@gmail.com",
+    "tlp_umkm": "081993478653"
+}
+
+###
+POST http://localhost:7000/regist-umkm
+Content-Type: application/json
+
+{
+    "name_umkm": "RM Primajaya",
+    "username_umkm": "prmj123",
+    "pass_umkm": "prmj123",
+    "email_umkm": "prmj123@gmail.com",
+    "tlp_umkm": "081563778976"
+}
+
+###
+POST http://localhost:7000/regist-umkm
+Content-Type: application/json
+
+{
+    "name_umkm": "RM Terapung",
+    "username_umkm": "trp123",
+    "pass_umkm": "trp123",
+    "email_umkm": "trp123@gmail.com",
+    "tlp_umkm": "081563778976"
+}
+
+###
+PUT http://localhost:7000/update-umkm/6
+Content-Type: application/json
+
+{
+    "name_umkm": "RM Terapung",
+    "username_umkm": "terapung123",
+    "pass_umkm": "trp123",
+    "email_umkm": "trp123@gmail.com",
+    "tlp_umkm": "081563778976"
+}
+
+###
+PUT http://localhost:7000/update-umkm/5
+Content-Type: application/json
+
+{
+    "name_umkm": "RM Primajaya",
+    "username_umkm": "prmj123",
+    "pass_umkm": "prmj123",
+    "email_umkm": "prmj123@gmail.com",
+    "tlp_umkm": "081563778976"
+}
+
+
+###
+POST http://localhost:7000/login-umkm
+Content-Type: application/json
+
+{
+    "email_umkm": "pdg123@gmail.com",
+    "pass_umkm": "12345"
+}
+
+###
+GET http://localhost:7000/token-umkm
+
+
+###
+DELETE http://localhost:7000/logout-umkm 
+
+
+// USER FARM 
+###
+GET http://localhost:7000/farms
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZEZhcm0iOjIsIm5hbWVfZmFybSI6IkthbGFuaSBGYXJtIiwidXNlcm5hbWVfZmFybSI6ImthbGFuaSIsImVtYWlsX2Zhcm0iOiJrYWxhbmlAZ21haWwuY29tIiwidGxwX2Zhcm0iOiIwODE1Mzc5MzQ2NzYiLCJhZGRyZXNzX2Zhcm0iOm51bGwsInBpY19mYXJtIjpudWxsLCJpYXQiOjE2ODQ4NTkwOTksImV4cCI6MTY4NDg1OTExNH0.B2aXDFqdLNPRbeQEpWQkvRJeqDtUpJ435wo4DUi9bQc
+
+
+###
+POST http://localhost:7000/farms
+Content-Type: application/json
+
+{
+    "name_farm": "Miami Farm",
+    "username_farm": "miami",
+    "pass_farm": "12345",
+    "email_farm": "miami@gmail.com",
+    "tlp_farm": "081563734676"
+}
+
+###
+POST http://localhost:7000/regist-farms
+Content-Type: application/json
+
+{
+    "name_farm": "Kalani Farm",
+    "username_farm": "kalani",
+    "pass_farm": "kalani123",
+    "email_farm": "kalani@gmail.com",
+    "tlp_farm": "081537934676"
+}
+###
+POST http://localhost:7000/regist-farms
+Content-Type: application/json
+
+{
+    "name_farm": "Citraland Farm",
+    "username_farm": "citraland",
+    "pass_farm": "ctrl",
+    "email_farm": "citraland@gmail.com",
+    "tlp_farm": "081561367826"
+}
+
+###
+POST http://localhost:7000/regist-farms
+Content-Type: application/json
+
+{
+    "name_farm": "Cottage Farm",
+    "username_farm": "itscottage",
+    "pass_farm": "cttg123",
+    "email_farm": "contage@gmail.com",
+    "tlp_farm": "081516726926"
+}
+
+###
+POST http://localhost:7000/regist-farms
+Content-Type: application/json
+
+{
+    "name_farm": "Daisy Farm",
+    "username_farm": "daisy",
+    "pass_farm": "daisy123",
+    "email_farm": "daisy@gmail.com",
+    "tlp_farm": "081513564926"
+}
+
+###
+PUT http://localhost:7000/update-farms/6
+Content-Type: application/json
+
+{
+    "name_farm": "Daisy Farm",
+    "username_farm": "daisy",
+    "pass_farm": "daisy123",
+    "email_farm": "daisy@gmail.com",
+    "tlp_farm": "081513564926"
+}
+
+###
+PUT http://localhost:7000/update-farms/5
+Content-Type: application/json
+
+{
+    "name_farm": "Cottage Farm",
+    "username_farm": "itscottage",
+    "pass_farm": "cttg123",
+    "email_farm": "cotagee@gmail.com",
+    "tlp_farm": "081516726926", 
+    "address_farm": "Malang",
+    "pic_farm": "xxx"
+}
+
+###
+POST http://localhost:7000/login-farms
+Content-Type: application/json
+
+{
+    "email_farm": "kalani@gmail.com",
+    "pass_farm": "kalani123"
+}
+
+
+###
+GET http://localhost:7000/token-farms
+
+###
+DELETE http://localhost:7000/logout-farms
